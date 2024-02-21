@@ -111,7 +111,7 @@ fun MyButton3() {
 
 @Preview(showBackground = true)
 @Composable
-fun MyPreview() {
+fun MyButtonPreview() {
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
