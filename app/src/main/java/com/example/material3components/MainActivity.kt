@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.example.material3components.components.DialogTrigger
 import com.example.material3components.components.MyButton1
 import com.example.material3components.ui.theme.Material3ComponentsTheme
 
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MyButton1()
+                    DialogTrigger()
                 }
             }
         }
