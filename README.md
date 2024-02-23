@@ -5,3 +5,4 @@
 * CheckBox
 * Dialog
 * Icon
+* Image
