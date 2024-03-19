@@ -1,6 +1,7 @@
 ## Material 3 Jetpack Compose components examples:
 
 * BadgedBox
+* BottomSheet
 * Button
 * CheckBox
 * Dialog
