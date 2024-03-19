@@ -15,6 +15,8 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ElevatedButton
+import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedButton
@@ -91,17 +93,17 @@ fun MyButton2() {
 
 @Composable
 fun MyButton3() {
-    val WIDTH1 = 150.dp
-    val WIDTH2 = 200.dp
-    val WIDTH3 = 300.dp
+    val small = 150.dp
+    val medium = 200.dp
+    val large = 300.dp
 
-    var width by remember { mutableStateOf(WIDTH1) }
+    var width by remember { mutableStateOf(small) }
 
-    Button(onClick = {
+    ElevatedButton(onClick = {
         width = when (width) {
-            WIDTH1 -> WIDTH2
-            WIDTH2 -> WIDTH3
-            else -> WIDTH1
+            small -> medium
+            medium -> large
+            else -> small
         }
     }, modifier = Modifier.width(width)) {
         Text(text = "Change size")
